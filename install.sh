@@ -7,4 +7,4 @@ hash git >/dev/null && /usr/bin/env git clone https://github.com/clifferson/dotf
 }
 
 echo "Running symlink_dotfiles.sh"
-/usr/bin/env bash ~/.dotfiles/symlink_dotfiles.sh
+/usr/bin/env bash ~/.files/symlink_dotfiles.sh
