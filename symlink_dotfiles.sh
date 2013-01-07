@@ -5,6 +5,7 @@
 for file in `ls ~/.files/dotfiles`
 do
   # Is thie file a symlink?
+  # TODO Howd do you test the target of a symlink?
   if [ -L ~/.$file ]
   then
     echo ".${file} is already a symlink. Skipping."
