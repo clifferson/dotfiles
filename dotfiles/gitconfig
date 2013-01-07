@@ -1,0 +1,9 @@
+[merge]
+	tool = vimdiff
+[user]
+	name = Cliff Erson
+	email = cerson@me.com
+[alias]
+  todo = grep --heading --break --ignore-case -e ' FIX: *' -e ' TODO: *'
+[color]
+	ui = true
