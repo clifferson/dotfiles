@@ -4,7 +4,7 @@
 
 for file in `ls ~/.files/dotfiles`
 do
-  # Is thie file all ready symlinked to where it should be? if so skip it.
+  # Is the file already symlinked to where it should be? if so skip it.
   if [ $(stat -F ~/.$file | awk '{print $NF}') = $HOME/.files/dotfiles/$file ]
   then
     echo ".${file} is already pointing to ${HOME}/.files/dotfiles/${file}"
