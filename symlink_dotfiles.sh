@@ -4,15 +4,14 @@
 
 for file in `ls ~/.files/dotfiles`
 do
-  # Is thie file a symlink?
-  # TODO Howd do you test the target of a symlink?
-  if [ -L ~/.$file ]
+  # Is thie file all ready symlinked to where it should be? if so skip it.
+  if [ $(stat -F ~/.$file | awk '{print $NF}') = $HOME/.files/dotfiles/$file ]
   then
-    echo ".${file} is already a symlink. Skipping."
+    echo ".${file} is already pointing to ${HOME}/.files/dotfiles/${file}"
     continue
   fi
 
-  # Does it alread exist? if so back itup to .pre-dotfiles-install.
+  # Does it alread exist? if so back it up to ~/.$file.pre-dotfiles-install.
   if [ -f ~/.$file ]
   then
     echo ".${file} already exists. Backing up."
