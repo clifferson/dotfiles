@@ -30,16 +30,18 @@ ZSH_THEME="muse"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby autojump brew rbenv bundler)
+#plugins=(git ruby autojump brew rbenv bundler)
+plugins=(git ruby autojump brew bundler)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=~/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.bin:/usr/X11/bin
+#export PATH=~/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.bin:/usr/X11/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin:/usr/local/sbin
 export EDITOR=vim
 
 # Enable Shims and autocompletion for rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 # Disable auto correct
 unsetopt correct_all
@@ -55,7 +57,7 @@ export P4CHARSET=utf8
 #alias vi="mvim -v"
 
 # Vim as man pager
-export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -"
+export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -c 'nmap q :q<cr>' -"
 
 # source-highlight
 export LESSOPEN="| /usr/local/Cellar/source-highlight/3.1.5/bin/src-hilite-lesspipe.sh %s"
