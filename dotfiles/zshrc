@@ -36,12 +36,12 @@ plugins=(git ruby autojump brew bundler)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-#export PATH=~/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.bin:/usr/X11/bin
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin:/usr/local/sbin
+export PATH=~/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.bin:/usr/X11/bin
+#export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin:/usr/local/sbin
 export EDITOR=vim
 
 # Enable Shims and autocompletion for rbenv
-#eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 # Disable auto correct
 unsetopt correct_all
