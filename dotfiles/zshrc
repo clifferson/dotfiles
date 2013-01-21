@@ -16,7 +16,8 @@ ZSH_THEME="muse"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+# Allegdly this makes it start faster
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -30,18 +31,18 @@ ZSH_THEME="muse"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-#plugins=(git ruby autojump brew rbenv bundler)
-plugins=(git ruby autojump brew bundler)
+plugins=(git ruby autojump brew rbenv bundler)
+#plugins=(git ruby autojump brew bundler)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=~/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.bin:/usr/X11/bin
-#export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin:/usr/local/sbin
+export PATH=~/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
 export EDITOR=vim
+#export TERM=xterm-256color
 
 # Enable Shims and autocompletion for rbenv
-eval "$(rbenv init -)"
+eval "$(rbenv init - --no-rehash)"
 
 # Disable auto correct
 unsetopt correct_all
@@ -60,8 +61,8 @@ export P4CHARSET=utf8
 export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -c 'nmap q :q<cr>' -"
 
 # source-highlight
-export LESSOPEN="| /usr/local/Cellar/source-highlight/3.1.5/bin/src-hilite-lesspipe.sh %s"
-export LESS=' -R '
+#export LESSOPEN="| /usr/local/Cellar/source-highlight/3.1.5/bin/src-hilite-lesspipe.sh %s"
+#export LESS=' -R '
 
 # Source euca shit
 #source ~/.euca/euca-kniferc
