@@ -1,2 +1,3 @@
-pry
-chef-client
+source :rubygems
+gem 'pry'
+gem 'chef'
