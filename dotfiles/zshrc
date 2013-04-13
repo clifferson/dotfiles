@@ -37,7 +37,7 @@ plugins=(git ruby autojump brew rbenv bundler)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=~/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
+export PATH=/Applications/Vagrant/bin:~/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export EDITOR=vim
 #export TERM=xterm-256color
 
@@ -74,3 +74,4 @@ alias vp='vagrant provision'
 alias vssh='vagrant ssh'
 alias more='less'
 alias knifep='knife \$\@ -c ~/chef-auth/chef.lax1.pivotal.knife.rb'
+alias knifelk='knife \$\@ -c /Users/cerson/ProJects/launchkey/knife.lkchef.rb'
