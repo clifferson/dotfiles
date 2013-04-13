@@ -1,3 +1,4 @@
 source :rubygems
 gem 'pry'
 gem 'chef'
+gem 'knife-block'
