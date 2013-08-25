@@ -1,0 +1,9 @@
+# General
+scroll bar, jump to spot clicked
+recent items to 0
+
+# Dock
+minimize  windows into application icon
+
+# Mission control
+unbind keyboard shortcuts
