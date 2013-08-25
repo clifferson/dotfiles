@@ -1,5 +1,7 @@
 ## 'Installing' these dotfiles
 
+Depreciated in favor of https://github.com/clifferson/workstation-cookbook/blob/master/recipes/install_dotfiles.rb
+
 ```bash
 curl -L https://raw.github.com/clifferson/dotfiles/master/install.sh | sh
 ```
