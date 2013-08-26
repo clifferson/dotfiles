@@ -343,6 +343,10 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+# Place the Dock on the right or left
+#defaults write com.apple.dock pinning start # not sure if this is needed
+defaults write com.apple.dock orientation -string right
+
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
 # Remove the animation when hiding/showing the Dock
