@@ -7,3 +7,6 @@ minimize  windows into application icon
 
 # Mission control
 unbind keyboard shortcuts
+
+# Misc
+caps = control
